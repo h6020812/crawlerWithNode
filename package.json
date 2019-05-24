@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/h6020812/crawlerWithNode#readme",
   "dependencies": {
+    "async": "^3.0.0",
+    "cheerio": "^1.0.0-rc.3",
     "request": "^2.88.0"
   }
 }
