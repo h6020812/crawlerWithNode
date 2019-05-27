@@ -32,7 +32,9 @@ function getInfo(url, callback) {
     // let subscriber = $('.qa-list__info--ironman span').eq(2).text().replace(/[^0-9]/g, '');
     let postList = $('tbody').map((index, obj) => {
       return {
-        title: $(obj)
+        alltr: $(obj).find('tr'),
+        findPic: $(obj).find('tr>img'),
+        title: $(obj).find('tr').eq(0).text().trim(),
     //     like: $(obj).find('.qa-condition__count').eq(0).text().trim(),
     //     comment: $(obj).find('qa-condition__count').eq(1).text().trim(),
     //     view: $(obj).find('.qa-condition__count').eq(2).text().trim(),
